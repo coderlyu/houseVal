@@ -1,0 +1,54 @@
+.page {
+  min-height: 100vh;
+  background: #eaeaea;
+}
+
+.result-head {
+  background: #821ba2;
+  padding-bottom: 30px;
+}
+
+.result-title {
+  display: inline-block;
+  width: 100%;
+  line-height: 40px;
+  font-size: 14px;
+  color: #eba8ff;
+  text-align: center;
+}
+
+.result-money {
+  display: inline-block;
+  width: 100%;
+  line-height: 50px;
+  font-size: 72rpx;
+  color: white;
+  text-align: center;
+}
+
+.result-body {
+  width: 100%;
+  background: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+image {
+  height: 286rpx;
+  width: 316rpx;
+}
+.loan-money{
+  font-size: 36px;
+  line-height: 60px;
+}
+.loan-text{
+  color: #929292;
+  font-size: 14px;
+  line-height: 20px;
+}
+.result-btn{
+  margin-top: 20px;
+}

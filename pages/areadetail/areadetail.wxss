@@ -1,0 +1,100 @@
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 90rpx;
+  background: #f6f6f6;
+  overflow: auto;
+}
+
+.head-success {
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 44px;
+  color: #b3b3b3;
+}
+
+.active {
+  background: #9945b3;
+  color: white;
+}
+
+.modal-body {
+  width: 100%;
+}
+
+.body-input-wrapper {
+  background: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.selected-text {
+  font-size: 13px;
+  color: #333;
+  margin-right: 5px;
+}
+
+.icon-guanbi2 {
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-body-ul {
+  margin-top: 1px;
+  min-height: 30px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-body-ul-prompt {
+  font-family: "黑体";
+  color: #929292;
+  font-size: 14px;
+  padding-left: 30rpx;
+}
+
+.selected-list {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 10px 0 10px;
+  padding-bottom: 10px;
+}
+
+.selected-list-title {
+  font-size: 15px;
+  line-height: 16px;
+  color: rgb(78, 78, 78);
+}
+
+.selected-list-detail {
+  font-size: 13px;
+}
+
+.notfound {
+  color: #929292;
+  font-size: 14px;
+  line-height: 45px;
+  text-indent: 1em;
+}
+
+.modal-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 92rpx;
+}
+
+.modal-btn {
+  border-radius: 0px !important;
+}
+
+.modal-btn::after {
+  border-radius: 0px !important;
+}

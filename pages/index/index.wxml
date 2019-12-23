@@ -1,0 +1,32 @@
+<image class="homebgimg" src="../../static/images/homebg.png"></image>
+<view class="page">
+  <view class="logintitle">
+    <text class="logintitle-firstp">光大房产估值</text>
+    <text class="logintitle-secondp">看看我的房子能贷多少</text>
+    <image class="logintitle-img" src="../../static/images/first-logo.png"></image>
+  </view>
+  <view class="page__hd loginform">
+    <view class="weui-cells__title">用户登录</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">账号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="userName" bindinput="userNameChange" value="{{userInfo.userName}}" placeholder="请输入手机号或用户名" />
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">密码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="passWordChange" name="passWord" type="password" value="{{userInfo.passWord}}" placeholder="请输入密码" />
+        </view>
+      </view>
+    </view>
+    <view class="page__hd login-btn">
+      <button class="weui-btn login-btn-green" bindtap="submitLogin">登录</button>
+    </view>
+  </view>
+</view>

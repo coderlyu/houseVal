@@ -1,0 +1,12 @@
+/* footer样式 */
+.footer{
+    width: 100%;
+    margin: 30rpx 0;
+}
+.footer__text{
+    color: #a5a5a5;
+    font-size: 24rpx;
+    text-align: center;
+    font-weight: 200;
+    line-height: 50rpx;
+}

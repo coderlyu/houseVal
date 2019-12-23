@@ -1,0 +1,12 @@
+/* 引入weui */
+@import "/utils/weui.wxss";
+
+/* 引入 iconfont 图标 */
+@import "/utils/iconfont.wxss";
+
+/* 点击按钮全局样式 */
+
+.login-btn-green {
+  background-color: #6b1686;
+  color: white; 
+}

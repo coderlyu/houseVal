@@ -1,0 +1,72 @@
+<view class="page">
+  <view class="modal-body">
+    <view class="body-input-wrapper">
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">详细地址</view>
+        </view>
+        <view class="weui-cell__bd selected-cell">
+          <text class="selected-text" selectable data-selected="1" bindtap="selectedTextClick" wx:if="{{nowSelected > 0}}">{{selectedText[0]}}</text>
+          <text class="selected-text" selectable data-selected="2" bindtap="selectedTextClick" wx:if="{{nowSelected > 1}}">{{selectedText[1]}}</text>
+          <text class="selected-text" selectable data-selected="3" bindtap="selectedTextClick" wx:if="{{nowSelected > 2}}">{{selectedText[2]}}</text>
+          <text class="selected-text" selectable data-selected="4" bindtap="selectedTextClick" wx:if="{{nowSelected > 3}}">{{selectedText[3]}}</text>
+          <input class="weui-input" bindinput="inputChange" value="{{inputVal}}" focus="{{showfocus}}" />
+          <icon class="iconfont icon-guanbi2" bindtap="btnClear"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="modal-body-ul">
+      <view class="modal-body-ul-prompt">
+        <block wx:if="{{!isHaveText}}">请输入(楼盘、栋、单元、室)</block>
+      </view>
+      <view class="modal-body-ul-prompt" wx:if="{{isHaveText && nowSelected<4}}">
+        <block wx:if="{{ nowSelected === 0 }}">
+          <block class="modal-body-item" wx:for="{{projectList}}" wx:key="item.id">
+            <view class="selected-list" bindtap="projectClick" data-projectname="{{item.projectName}}" data-projectid="{{item.projectId}} ">
+              <view class="selected-list-title">
+                <block wx:if="{{item.areaName}}">[{{item.areaName}}]</block>{{item.projectName}}
+                <block wx:if="{{item.otherName}}">({{item.otherName}})</block>
+              </view>
+              <view class="selected-list-detail">
+                {{item.address}}
+              </view>
+            </view>
+          </block>
+        </block>
+        <block wx:if="{{ nowSelected === 1 }}">
+          <block class="modal-body-item" wx:for="{{ buildingList}}" wx:key="item.id">
+            <view class="selected-list" bindtap="buildingClick" data-buildingname="{{item.buildingName}}" data-buildingid="{{item.buildingId}} ">
+              <view class="selected-list-title">
+                {{ item.buildingName }}
+              </view>
+            </view>
+          </block>
+        </block>
+        <block wx:if="{{ nowSelected === 2 }}">
+          <block class="modal-body-item" wx:for="{{ floorList }}" wx:key="item.floor">
+            <view class="selected-list" bindtap="floorClick" data-floor="{{item.floor}}">
+              <view class="selected-list-title">
+                {{ item.floor }}层
+              </view>
+            </view>
+          </block>
+        </block>
+        <block wx:if="{{ nowSelected === 3 }}">
+          <block class="modal-body-item" wx:for="{{ houseList }}" wx:key="item.floor">
+            <view class="selected-list" bindtap="houseClick" data-houseid="{{item.houseId}}" data-housename="{{item.houseName}}" data-buildarea="{{item.buildArea}}">
+              <view class="selected-list-title">
+                {{ item.houseName }}
+              </view>
+            </view>
+          </block>
+        </block>
+        <view class="modal-body-tips notfound" bindtap="showFocus">
+          找不到我想要的（可继续输入联想）
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="modal-button">
+  <button class="modal-btn {{ nowSelected >3 ? 'active': ''}}" disabled="{{ nowSelected >3 ? false: true}}" bindtap="btnSubmit">完成</button>
+</view>

@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="page_hd result-head">
+    <text class="result-title">房产预估价格(仅供你参考)</text>
+    <text class="result-money">￥15,003,348</text>
+  </view>
+  <view class="page_bd result-body">
+    <image src="../../static/images/success.png"></image>
+    <text class="loan-money">￥5,396,378</text>
+    <text class="loan-text">可贷金额</text>
+    <text class="loan-text">(实际贷款金额一审批为准)</text>
+  </view>
+  <view class="page_hd result-btn">
+    <button class="login-btn-green">我要贷款</button>
+  </view>
+</view>

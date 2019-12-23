@@ -1,0 +1,72 @@
+/* 总体页面 */
+
+.page {
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.homebgimg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* 头部文字部分 */
+
+.logintitle {
+  width: 100%;
+  position: relative;
+  top: 43%;
+}
+
+.logintitle-firstp {
+  display: block;
+  font-size: 30px;
+  color: #6b1686;
+  text-align: center;
+}
+
+.logintitle-secondp {
+  display: block;
+  font-size: 14px;
+  color: #6b1686;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.logintitle-img {
+  height: 68rpx;
+  width: 330rpx;
+  display: block;
+  margin: 20px auto;
+}
+
+.loginform {
+  position: relative;
+  top: 40%;
+}
+
+/* 头部图片部分 */
+
+.login-top {
+  margin-bottom: 20px;
+}
+
+.login-image {
+  width: 100%;
+  height: 300px;
+}
+
+/* 提交按钮 */
+
+.login-btn {
+  margin-top: 20px;
+}
